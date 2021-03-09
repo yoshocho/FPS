@@ -357,7 +357,7 @@ MonoBehaviour:
   m_HorizontalAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 300
+    m_MaxSpeed: 700
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -413,6 +413,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &825686877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1504354593060313646, guid: db30b7e856d1c56409cbb01b408f3ebd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7476370786580190624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &825686878
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825686877}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 52a71fb45cc97d24c906aa8727b28178, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &825686879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825686877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cbd3ced1d9b5140965d0dffe35318e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletObj: {fileID: 0}
+  magazine: 0
+  shotSpeed: 0
+  shotInterval: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,10 +1614,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 519839151}
     m_Modifications:
+    - target: {fileID: 935258482204172689, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1504354593060313646, guid: db30b7e856d1c56409cbb01b408f3ebd,
         type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849996381756030371, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2020553192751106058, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2066922463175246457, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2502826361706555453, guid: db30b7e856d1c56409cbb01b408f3ebd,
         type: 3}
@@ -1642,6 +1703,96 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3103800335539866961, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3150535870774247523, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166622789114376740, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4141620520201813851, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197368320429218454, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492929197642450466, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5763557744895419210, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341840858701472440, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6771781556189733162, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6891847896608443962, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905198298584051216, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028379749037655198, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036708008617279959, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8048877995206540244, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106138146830068983, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170950368627487306, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8475653569073353421, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8844715723051591520, guid: db30b7e856d1c56409cbb01b408f3ebd,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db30b7e856d1c56409cbb01b408f3ebd, type: 3}
